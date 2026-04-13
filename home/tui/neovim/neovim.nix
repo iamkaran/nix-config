@@ -1,4 +1,7 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
+let
+  configPath = "${config.home.homeDirectory}/nix-config/home/tui/neovim/nvim";
+in
 {
   home.packages = with pkgs; [
     # LSP
@@ -33,4 +36,6 @@
     withPython3 = true;
     withRuby = false;
   };
+
+  xdg.configFile."nvim".source = config.lib.file.mkOutOfStoreSymlink configPath;
 }

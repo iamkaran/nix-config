@@ -2,7 +2,6 @@
   ...
 }:
 {
-
   # Power
   services.upower.enable = true;
   # ── CPU Governor ──────────────────────────────────────────
@@ -10,7 +9,7 @@
     enable = true;
     settings = {
       battery = {
-        governor = "powersave";
+        governor = "schedutil";
         turbo = "auto";
       };
       charger = {
@@ -26,7 +25,7 @@
       # Let auto-cpufreq handle CPU — don't conflict
       CPU_SCALING_GOVERNOR_ON_BAT = "";
       CPU_SCALING_GOVERNOR_ON_AC = "";
-      CPU_ENERGY_PERF_POLICY_ON_BAT = "power";
+      CPU_ENERGY_PERF_POLICY_ON_BAT = "balance_power";
       CPU_BOOST_ON_BAT = 1;
       DISK_APM_LEVEL_ON_BAT = "129";
       SATA_LINKPWR_ON_BAT = "min_power";
@@ -38,7 +37,7 @@
     };
   };
   # ── Powertop auto-tune on boot ─────────────────────────────
-  powerManagement.powertop.enable = true;
+  # powerManagement.powertop.enable = true;
   # ── Kernel params ─────────────────────────────────────────
   boot.kernelParams = [
     "mem_sleep_default=deep" # S4 suspend — better battery on sleep
