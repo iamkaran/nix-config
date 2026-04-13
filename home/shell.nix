@@ -30,6 +30,7 @@
   home.packages = with pkgs; [
     starship
     btop
+    htop
     fastfetch
   ];
 }
