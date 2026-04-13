@@ -31,10 +31,10 @@
                   ./home/default.nix
                   ./home/shell.nix
                   ./home/git.nix
-		  ./home/tui/tools.nix
+                  ./home/tui/tools.nix
                   ./home/gui/de/hyprland.nix
-		  ./home/gui/apps.nix
-		  ./home/tui/neovim/neovim.nix
+                  ./home/gui/apps.nix
+                  ./home/tui/neovim/neovim.nix
                 ];
               };
             }
