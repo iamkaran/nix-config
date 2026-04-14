@@ -1,24 +1,11 @@
 {
   pkgs,
-  username,
   ...
 }:
 
 {
-  users.users."${username}" = {
-    isNormalUser = true;
-    description = "${username}";
-    extraGroups = [
-      "networkmanager"
-      "wheel"
-      "docker"
-    ];
-    # packages = with pkgs; [];
-  };
-
   # Services
   services.openssh.enable = true;
-  services.ratbagd.enable = true;
   services.blueman.enable = true;
   hardware.bluetooth.enable = true;
 
@@ -28,7 +15,6 @@
     "flakes"
   ];
   nixpkgs.config.allowUnfree = true;
-  nixpkgs.config.android_sdk.accept_license = true;
 
   # Fonts & Timezone
   fonts = {

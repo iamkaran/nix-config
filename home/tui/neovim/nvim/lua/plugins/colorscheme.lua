@@ -1,10 +1,9 @@
 return {
-  "folke/tokyonight.nvim",
-  opts = {
-    transparent = true,
-    styles = {
-      sidebars = "transparent",
-      floats = "transparent",
+  { "morhetz/gruvbox" },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "gruvbox",
     },
   },
 }
