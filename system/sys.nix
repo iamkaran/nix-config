@@ -16,7 +16,7 @@
   ];
   nixpkgs.config.allowUnfree = true;
 
-  # Fonts & Timezone
+  # -------------Fonts-&-Timezone-------------
   fonts = {
     enableDefaultPackages = true;
 
@@ -34,8 +34,7 @@
   i18n.defaultLocale = "en_US.UTF-8";
   time.timeZone = "Asia/Kolkata";
 
-  # Bootloader.
-  boot.loader.systemd-boot.enable = true;
+  # ------------------OTHERS---------------------
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
@@ -49,7 +48,20 @@
     alsa.support32Bit = true;
     pulse.enable = true;
   };
+  # -----------------NERD-STUFF------------------
+
+  # Bootloader.
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
+
+  # Graphics
+  hardware.graphics = {
+    enable = true;
+    extraPackages = with pkgs; [
+      intel-compute-runtime
+      intel-media-driver
+    ];
+  };
 
   nixpkgs.hostPlatform = "x86_64-linux";
-  boot.loader.efi.canTouchEfiVariables = true;
 }
