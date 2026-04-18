@@ -11,8 +11,6 @@
     android-studio
     android-tools
 
-    davinci-resolve
-
     libreoffice-fresh
     hunspell
     hunspellDicts.en_US

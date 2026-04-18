@@ -6,6 +6,7 @@
     hugo
     docker
     docker-compose
+    claude-code
 
     # Network Tools
     curl

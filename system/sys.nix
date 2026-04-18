@@ -55,13 +55,12 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Graphics
-  hardware.graphics = {
-    enable = true;
-    extraPackages = with pkgs; [
-      intel-compute-runtime
-      intel-media-driver
-    ];
-  };
+  # hardware.graphics = {
+  #   enable = true;
+  #   extraPackages = with pkgs; [
+  #     intel-compute-runtime-legacy1
+  #   ];
+  # };
 
   nixpkgs.hostPlatform = "x86_64-linux";
 }
