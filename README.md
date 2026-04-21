@@ -1,6 +1,4 @@
 <div align="center">
-  <img width="800" height="768" alt="image" src="https://github.com/user-attachments/assets/234f1a26-e9e8-464f-b8fb-2db0722c10f7" />
-  <br></br>
   <img width="104" height="120" alt="image" src="https://github.com/user-attachments/assets/4cc91150-36e7-402c-b6ed-db9bd13ff0c2" />
   <h1>NixOS dotfiles</h1>
   <p><strong>Declarative, modular, and optimized workstation configuration</strong></p>
