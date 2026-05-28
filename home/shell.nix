@@ -22,6 +22,8 @@
       export QT_QPA_PLATFORM=xcb
       export PATH=$PATH:$GOPATH/bin
 
+      PATH=$PATH:$(go env GOPATH)/bin
+
       # ALIASES
       alias bat='upower -i $(upower -e | grep battery) | grep -E "state|time to|percentage"'
       alias e-book='~/read.sh'
