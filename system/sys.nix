@@ -67,25 +67,25 @@
   };
 
   # Enable dconf for EasyEffects settings storage
-  # programs.dconf.enable = true;
-  #
-  # # Ensure the package is installed
-  # environment.systemPackages = [ pkgs.easyeffects ];
-  #
-  # systemd.user.services.easyeffects = {
-  #   description = "EasyEffects daemon";
-  #   requires = [ "pipewire.service" ];
-  #   after = [ "pipewire.service" ];
-  #   wantedBy = [ "graphical-session.target" ];
-  #   partOf = [ "graphical-session.target" ];
-  #   serviceConfig = {
-  #     # Use --service-mode for v8.x instead of --daemon
-  #     ExecStart = "${pkgs.easyeffects}/bin/easyeffects --gapplication-service";
-  #     ExecStop = "${pkgs.easyeffects}/bin/easyeffects --quit";
-  #     Restart = "on-failure";
-  #     RestartSec = 5;
-  #   };
-  # };
+  programs.dconf.enable = true;
+
+  # Ensure the package is installed
+  environment.systemPackages = [ pkgs.easyeffects ];
+
+  systemd.user.services.easyeffects = {
+    description = "EasyEffects daemon";
+    requires = [ "pipewire.service" ];
+    after = [ "pipewire.service" ];
+    wantedBy = [ "graphical-session.target" ];
+    partOf = [ "graphical-session.target" ];
+    serviceConfig = {
+      # Use --service-mode for v8.x instead of --daemon
+      ExecStart = "${pkgs.easyeffects}/bin/easyeffects --gapplication-service";
+      ExecStop = "${pkgs.easyeffects}/bin/easyeffects --quit";
+      Restart = "on-failure";
+      RestartSec = 5;
+    };
+  };
   # -----------------NERD-STUFF------------------
 
   # Bootloader.

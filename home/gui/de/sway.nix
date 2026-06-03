@@ -36,5 +36,8 @@
     # Notifications
     mako
     libnotify
+
+    # Others
+    xorg.xrandr # 1.8.9
   ];
 }

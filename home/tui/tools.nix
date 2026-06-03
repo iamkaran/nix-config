@@ -6,8 +6,6 @@
     tmux # Terminal Multiplexer
     hugo # Static Site Generator (Blogging)
     claude-code # Obsidian
-    jdk17 # For gradlew tools
-    docker
     docker-compose
     cobra-cli
 

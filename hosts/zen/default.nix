@@ -3,10 +3,10 @@
   imports = [
     ../../hosts/zen/hardware-configuration.nix
     ../../system/network.nix
+    ../../system/virtualization.nix
     ../../system/sys.nix
     ../../system/user-sys.nix
     ../../system/power.nix
-    # ../../system/vm.nix
 
     ../../modules/nixos/dev.nix
     # ../../modules/nixos/nginx/nginx.nix

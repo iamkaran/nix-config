@@ -11,11 +11,18 @@
     gofumpt
     goimports-reviser
     gcc
+    gdb
+    jdk21
+    openjfx21
+    libXxf86vm
+    glib
     nodejs
     kotlin-native
     nixd
     nixfmt
     stylua
+    heroic
+    gamescope
   ];
 
   programs.steam = {
@@ -23,11 +30,14 @@
     remotePlay.openFirewall = true;
   };
 
+  # modules/nixos/dev.nix
   documentation = {
-      enable = true;
-      dev.enable = true;
-      man.enable = true;
-      man.generateCaches = true;
+    enable = true;
+    man = {
+      mandoc.enable = true;
+      man-db.enable = false;
+      cache.enable = true;
+    };
   };
 
 }

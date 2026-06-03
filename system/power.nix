@@ -11,8 +11,11 @@
       CPU_SCALING_GOVERNOR_ON_AC = "performance";
       CPU_ENERGY_PERF_POLICY_ON_BAT = "balance_power";
       CPU_ENERGY_PERF_POLICY_ON_AC = "performance";
+      # CPU_SCALING_MIN_FREQ_ON_AC = 400000;
+      # CPU_SCALING_MAX_FREQ_ON_AC = 1800000; # Cap at 1.8 GHz instead of letting it boost to 3.6 GHz
+
       CPU_BOOST_ON_BAT = 0;
-      CPU_BOOST_ON_AC = 1; 
+      CPU_BOOST_ON_AC = 0; 
       
       DISK_APM_LEVEL_ON_BAT = "129";
       SATA_LINKPWR_ON_BAT = "min_power";
