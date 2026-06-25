@@ -3,11 +3,14 @@
   home.packages = with pkgs; [
     # Core
 
+    kitty
     tmux # Terminal Multiplexer
     hugo # Static Site Generator (Blogging)
     claude-code # Obsidian
+    docker
     docker-compose
     cobra-cli
+    mpv
 
     # Network Tools
 
@@ -32,6 +35,8 @@
     tokei
     binwalk
     binutils
+    exfatprogs
+    parted
 
     # Search / navigation
 

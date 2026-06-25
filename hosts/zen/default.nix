@@ -12,7 +12,7 @@
     # ../../modules/nixos/nginx/nginx.nix
     ../../modules/nixos/desktop-sway.nix  # switch back: desktop.nix
     # ../../modules/wireguard/wireguard.nix
-    ../../modules/tailscale/tailscale.nix
+    # ../../modules/tailscale/tailscale.nix
     # ../../modules/zerotier/zerotier.nix
   ];
   system.stateVersion = "25.11";

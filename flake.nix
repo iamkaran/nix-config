@@ -31,6 +31,7 @@
                   ./home/default.nix
                   ./home/shell.nix
                   ./home/git.nix
+                  ./home/ssh.nix
                   ./home/tui/tools.nix
                   ./home/gui/de/sway.nix  # switch back: hyprland.nix
                   ./home/gui/apps.nix

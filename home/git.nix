@@ -4,13 +4,12 @@
     enable = true;
     settings = {
       user.name = "iamkaran";
-      user.email = "your@email.com";
+      user.email = "kforkaranveer@gmail.com";
     };
+    ignores = [ "Session.vim" ];
   };
-
   home.packages = with pkgs; [
     lazygit
-    git
     gh
   ];
 }
