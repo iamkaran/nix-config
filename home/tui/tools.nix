@@ -15,6 +15,8 @@
     # Network Tools
 
     curl
+    ffmpeg
+    yt-dlp
     lsof
     wget
     nmap
@@ -28,6 +30,8 @@
     # File tools
 
     file
+    ifuse
+    libimobiledevice
     git-filter-repo
     unzip
     zip
@@ -37,6 +41,7 @@
     binutils
     exfatprogs
     parted
+    stow
 
     # Search / navigation
 

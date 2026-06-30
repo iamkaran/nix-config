@@ -3,6 +3,7 @@
   home.packages = with pkgs; [
     # Daily
     brave
+    kdePackages.kdenlive
     firefox
     piper
     obsidian

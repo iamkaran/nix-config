@@ -24,9 +24,11 @@
     enable = false;
     remotePlay.openFirewall = true;
   };
+  services.usbmuxd.enable = true;
 
   documentation = {
     enable = true;
+    dev = { enable = true; };
     man = {
       mandoc.enable = true;
       man-db.enable = false;
